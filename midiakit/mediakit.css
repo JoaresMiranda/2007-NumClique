@@ -1,0 +1,32 @@
+/*
+ESTILO PARA A PAGINA MEDIAKIT DA NUMCLIQUE
+Autor: Joares Wallace Miranda
+*/
+
+* { margin:0; padding:0; }
+body { font:12px Arial, Helvetica, sans-serif; background:url(imagens/bg.png) top left; }
+#geral { width:930px; padding:15px; margin:15px auto; background-color:#FFF; line-height:23px; border:2px solid #CCC; }
+a { color:#F90; }
+
+#topo { height:90px; }
+#topo h1 { text-indent:-5000px; overflow:hidden; background:url(imagens/logo-mediakit.jpg) no-repeat top left; width:248px; height:37px; float:left; margin-top:20px; }
+#topo h2 { text-indent:-5000px; overflow:hidden; background:url(imagens/logo-numclique.jpg) no-repeat left; width:348px; height:73px; float:right; }
+#topo h2 a { width:348px; height:73px; display:block; }
+
+.caixaMediakit { margin-top:30px; clear:both; }
+.caixaMediakit h3 { font:24px Georgia, "Times New Roman", Times, serif; background:url(imagens/marcador.jpg) no-repeat top left; text-indent:35px; margin-bottom:10px; }
+.caixaMediakit h4 { font:16px Georgia, "Times New Roman", Times, serif; margin-bottom:10px; }
+#perfilLeitores div { width:455px; float:left; }
+.caixaDireita { margin-left:20px; }
+
+#estatisticaAcesso,
+#formatoAnuncios,
+#informacoesContato { float:left; clear:both; }
+
+#formatoAnuncios div { width:296px; float:left; }
+.bannerquadrado { margin:0 20px; }
+
+#informacoesContato { width:930px; height:210px; background:url(imagens/icone-numclique.jpg) no-repeat bottom right; }
+#baixarPDF { background:url(imagens/pdf_icon.gif) no-repeat center left; text-indent:60px; height:20px; padding:15px 0; }
+
+#rodape { width:930px; clear:both; font:11px Arial, Helvetica, sans-serif; color:#666; }

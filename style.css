@@ -1,0 +1,486 @@
+/*  
+
+Theme Name: NumClique
+
+Author: Joares Miranda 
+
+*/
+
+
+
+body {
+	font:12px Verdana, Arial, Helvetica, sans-serif;
+	color:#333;
+	margin:0;
+	padding:0;
+	background:url(images/bg_top_corpo.jpg) repeat-x top left;
+}
+img { border:none; }
+#wrap {
+	width:980px;
+	margin:0 auto;
+	padding:0;
+}
+#top {
+	height:150px;
+	width:980px;
+	clear:both;
+	margin:0 auto;
+	padding:0;
+}
+h2,
+h3 {
+	font-size:16px;
+	font-weight:700;
+	margin:0;
+	padding:0;
+}
+#main {
+	width:980px;
+	margin:10px auto;
+	padding:0;
+}
+#header {
+	width:400px;
+	height:69px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#header h1.blogtitle {
+	text-indent:-5000px;
+	overflow:hidden;
+	background:url(images/logo.jpg) no-repeat top left;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fff;
+	margin:0 0 0 10px;
+	padding:10px 0 0;
+	width:558px;
+	height:127px;
+}
+#header h1 a {
+	width:558px;
+	height:127px;
+	display:block;
+}
+#header p.desc {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#fff;
+	font-size:11px;
+	margin:0;
+	padding:0;
+	display:none;
+}
+#content {
+	width:515px;
+	float:left;
+	margin:0 0 0 15px;
+	padding:20px 0;
+}
+.entry {
+	font-size:11px;
+	float:left;
+	width:515px;
+	text-align:justify;
+	margin:15px 0 3px 0;
+	padding:0 0 5px 0;
+}
+.entry h2,
+#posts_similar h2 {
+	background:url(images/ic_post.gif) no-repeat center left;
+	padding-left:25px;
+}
+.entry h2 a { color:#333 !important; }
+.entry h2 a:hover {
+	color:#F90 !important;
+	text-decoration:underline !important;
+}
+#sidebar {
+	float:right;
+	width:420px;
+	margin:0;
+	padding:20px 0 0;
+}
+.rsidebar h2,
+ .lsidebar h2 {
+	background:#EEE url(images/ic_h2.gif) no-repeat 180px 6px;
+	border-bottom:1px solid #CCC;
+	height:20px;
+	font-size:13px;
+	font-weight:700;
+	color:#F90;
+	margin:0 0 5px 0;
+	padding:3px 0 5px 8px;
+}
+.rsidebar {
+	float:right;
+	width:200px;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+.lsidebar {
+	float:left;
+	width:200px;
+	margin:0;
+	padding:0;
+}
+.postmetadata {
+	/*	
+
+	background:#eee;
+
+	border-bottom:1px #ccc solid;
+
+	border-top:1px #eee solid;
+
+*/
+
+	font-size:10px;
+	margin:0;
+	padding:5px;
+	clear:both;
+}
+.boxcomments {
+	margin-bottom:20px;
+	width:510px;
+}
+#commentform {
+	border-top:1px solid #eee;
+	margin:0;
+	padding:15px 15px 1px;
+}
+#commentform label {
+	display:block;
+	margin:0;
+}
+#commentform input {
+	width:170px;
+	margin:0 5px 10px 0;
+	padding:1px;
+}
+#commentform textarea {
+	width:400px;
+	margin:0 0 10px;
+	padding:0;
+}
+#commentform #submit { margin:0 0 20px; }
+#commentform p { margin:5px 0; }
+ol.commentlist {
+	margin:0 0 1px;
+	padding:0;
+}
+ol.commentlist :hover { background:url(images/latestbck.gif) repeat-x; }
+ol.commentlist li {
+	display:block;
+	list-style:none;
+	margin:0;
+	padding:15px 15px 1px;
+}
+ol.commentlist li :hover { background:none; }
+ol.commentlist li.commenthead {
+	display:block;
+	list-style:none;
+	margin:0;
+	padding:5px 15px;
+}
+ol.commentlist li.commenthead h2 { margin:0; }
+ol.tblist {
+	border-top:1px solid #fff;
+	list-style:none;
+	margin:0 0 1px;
+	padding:15px;
+}
+ol.tblist li {
+	display:block;
+	list-style:none;
+	background:transparent url(images/c.gif) 0 2px no-repeat;
+	padding-left:15px;
+	margin:0 0 5px;
+}
+#eof {
+	width:980px;
+	clear:both;
+	height:20px;
+	background:#fff;
+	margin:0 auto;
+	padding:0;
+}
+.navigation {
+	width:500px;
+	float:left;
+	color:#666;
+}
+.aligncenter,
+p object,
+.flashvideo embed {
+	display:block;
+	margin:5px auto;
+}
+.alignright {
+	float:right;
+	margin-top:10px;
+}
+.alignleft {
+	float:left;
+	margin-top:10px;
+}
+#footer {
+	background:#000 url(images/vazado.gif) repeat-x top left;
+	border-top:4px solid #FFC900;
+	height:40px;
+	padding-top:1px;
+	line-height:31px;
+	clear:both;
+}
+.footer {
+	width:980px;
+	text-align:left;
+	font-size:11px;
+	margin:5px auto 0 auto;
+	padding-left:10px;
+	color:#FFF;
+}
+a {
+	text-decoration:none;
+	color:#F90;
+	border:none;
+}
+a:hover { text-decoration:underline; }
+#header h1 a:link,
+#header h1 a:active,
+#header h1 a:visited,
+#header h1 a:hover {
+	text-decoration:none;
+	color:#fff;
+	border:none;
+}
+.rsidebar ul,
+.lsidebar ul {
+	list-style-type:none;
+	line-height:200%;
+	font-size:11px;
+	margin:0 auto;
+	padding:0;
+}
+.rsidebar ul li,
+.lsidebar ul li {
+	list-style-type:none;
+	margin:0 0 20px;
+	padding:0;
+}
+.rsidebar ul li ul,
+.lsidebar ul li ul {
+	list-style-type:square;
+	margin:0 auto;
+	padding:0 3px;
+}
+.rsidebar ul li ul li,
+.lsidebar ul li ul li {
+	list-style-type:none;
+	border:0;
+	border-bottom:#EEE solid 1px;
+	margin:0 auto;
+	padding:0;
+}
+.rsidebar ul li ul li ul.children li,
+.lsidebar ul li ul li ul.children li {
+	list-style-type:none;
+	border:0;
+	margin:0 auto;
+	padding:0;
+}
+.rsidebar ul li ul li a,
+.lsidebar ul li ul li a { color:#333; }
+.rsidebar ul li ul li a:hover,
+.lsidebar ul li ul li a:hover { color:#F90; }
+h2 a { color:#F90; }
+#searchform { margin:0 0 15px 0; }
+#searchform input {
+	width:322px;
+	height:22px;
+	padding:3px;
+	font:14px "Trebuschet MS", Verdana, Arial, Helvetica, sans-serif;
+	color:#333;
+}
+input#s { border:1px solid #CCC; }
+input#searchsubmit {
+	width:80px !important;
+	height:30px !important;
+	position:relative;
+	top:15px;
+}
+small {
+	color:#999;
+	position:relative;
+	top:4px;
+	margin-bottom:8px;
+}
+#col_rss {
+	background:url(images/bg_rss.jpg) no-repeat top left;
+	height:100px;
+	position:relative;
+	top:15px;
+	clear:both;
+}
+#col_rss ul li {
+	background:url(images/marcador_lista.jpg) no-repeat center left;
+	text-indent:20px;
+	margin-left:90px;
+}
+blockquote {
+	width:400px;
+	margin: 15px 30px 0 40px;
+	padding-left: 20px;
+	border-left: 5px solid #ddd;
+	color:#666;
+	text-align:left;
+	font-style:italic;
+}
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+}
+/* ADENDOS */
+
+#ueba { margin:5px 0; }
+#blogblogs { margin: 5px 0 15px 0; }
+#content .entry img.esquerda,
+#content .entry img.imgalignleft,
+#content .entry img.alignleft {
+	margin:0px 10px 5px 0px;
+	float:left;
+}
+#content .entry img.direita,
+#content .entry img.imgalignright,
+#content .entry img.alignright {
+	margin:0px 0px 5px 10px;
+	float:right;
+}
+#content .entry img.aligncenter,
+#content .entry img.aligncenter {
+	margin:0px auto 5px auto;
+	clear:both;
+	text-align:center;
+}
+#content .entry .paginador {
+	clear:both;
+	text-align:center;
+	position:relative;
+	top:20px;
+}
+#notasRodape {
+	text-align:left;
+	width:460px;
+	padding:7px 15px;
+	margin:25px auto 15px auto;
+	border:1px dashed #CCC;
+}
+#notasRodape span { color:#F90; }
+.publicidadeDell,
+ .anunciosGoogle { text-align:center; }
+.videoIndexado { text-align:center; }
+.posts_similar {
+	margin-top:10px;
+	padding-top:10px;
+	border-top:1px solid #EEE;
+	border-bottom:1px solid #EEE;
+}
+#rec6 { padding-top:10px; }
+.posts_similar,
+#rec6 { clear:both; }
+.posts_similar h3 {
+	background:url(http://www.numclique.net/wp-content/themes/numclique/images/marcador_lista.jpg) no-repeat center left;
+	text-indent:20px;
+	font:bold 12px Verdana, Arial, Helvetica, sans-serif;
+}
+.posts_similar ul {
+	position:relative;
+	left:-40px;
+	list-style:none;
+}
+.posts_similar ul li { padding:2px 0; }
+/* PRA NAO SUMIR O SIMBOLO DO TITULO DO COMENT */
+
+.commentlist .commenthead h2:hover { background:url(images/ic_post.gif) no-repeat center left; }
+/* GRAVATAR */
+
+.imgGravatar {
+	float:left;
+	margin:0 10px 5px 0;
+	border:1px solid #CCC;
+	padding:2px;
+	width:40px;
+	height:40px;
+}
+.comentarista {
+	float:left;
+}
+.comentarista span {
+	color:#CCC;
+	font-size:10px;
+}
+
+.comentarista p { float:left; }
+.comentarista img { float:left; position:relative; top:14px; left:5px; }
+
+.commentlist li p { clear:both; }
+/* SHARE */
+
+#share {
+	text-align:right;
+	clear:both;
+	width:515px;
+	margin-top:15px;
+}
+#share a { color:#000; }
+
+
+/* ASSINAR VIA E-MAIL */
+#assinarEmail { font:11px Verdana, Arial, Helvetica, sans-serif; border:1px solid #FC0; padding:3px 10px 10px 10px; margin:15px 0; width:178px; float:left;  }
+#btAssina { background-color:#FC0; border:none; padding:2px 3px; margin:7px 5px 0 0; float:right; }
+
+
+/* PAGINACAO */
+#navegacao {
+clear:both;
+padding-top:15px;
+text-align:right;
+}
+
+.wp-pagenavi a, .wp-pagenavi a:link, .wp-pagenavi a:active {
+	padding: 2px 4px 2px 4px; 
+	margin: 2px;
+	text-decoration: none;
+	border: 1px solid #FF9900;
+	color: #000000;
+	background-color: #FFFFFF;	
+}
+.wp-pagenavi a:hover {	
+	border: 1px solid #FF6600;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.wp-pagenavi span.pages {
+	padding: 2px 4px 2px 4px; 
+	margin: 2px 2px 2px 2px;
+	color: #000000;
+	border: 1px solid #000;
+	background-color: #FFFFFF;
+display:none;
+}
+.wp-pagenavi span.current {
+	padding: 2px 4px 2px 4px; 
+	margin: 2px;
+	font-weight: bold;
+	border:none;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.wp-pagenavi span.extend {
+	padding: 2px 4px 2px 4px; 
+	margin: 2px;	
+	border: 1px solid #FF9900;
+	color: #000000;
+	background-color: #FFFFFF;
+}
