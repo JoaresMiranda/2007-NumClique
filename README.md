@@ -7,3 +7,7 @@ Technology-themed blog and digital lifestyle
 ## Technology
 * Wordpress
 * Responsive layout
+
+## Screenshot
+
+![Screenshot blog](https://github.com/JoaresMiranda/2007-NumClique/blob/master/screenshot.png)
