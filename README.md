@@ -1,4 +1,4 @@
-# PROLED
+# NumClique
 Technology-themed blog and digital lifestyle
 
 ## Design
