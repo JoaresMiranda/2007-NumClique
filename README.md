@@ -10,4 +10,4 @@ Technology-themed blog and digital lifestyle
 
 ## Screenshot
 
-!(https://github.com/JoaresMiranda/2007-NumClique/blob/master/screenshot.png?raw=true)
+!(https://github.com/JoaresMiranda/2007-NumClique/blob/master/screenshot.png)
