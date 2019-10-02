@@ -1,7 +1,7 @@
 # NumClique
 Technology-themed blog and digital lifestyle
 * Version: 1.0
-* 2007
+* publish in 2007
 
 ## Design
 * Fireworks
